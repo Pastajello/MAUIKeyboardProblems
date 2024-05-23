@@ -4,7 +4,7 @@
              x:Class="KeyboardProblems.MainPage"
              BackgroundColor="White"
              HideSoftInputOnTapped="True">
-<Grid x:Name="keyboardView" BackgroundColor="Green" RowDefinitions="*,Auto">
+<Grid x:Name="keyboardView" BackgroundColor="Blue" RowDefinitions="*,Auto">
         <ScrollView x:Name="scrollView">
              <VerticalStackLayout
                 Padding="30,0"

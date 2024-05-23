@@ -48,15 +48,14 @@ public partial class MainPage : ContentPage
             stack.Add(new Button()
             {
                 HorizontalOptions = LayoutOptions.End,
-                Text = "Save"
+                Text = "Save",
+                BackgroundColor = Colors.Red
             });
             var uiView = new UIView() { BackgroundColor = Colors.Gray.ToPlatform() };
             uiView.Frame = new CGRect(0, 0, App.Current.MainPage.Width, 97);
-            //uiView.Items = new UIBarButtonItem[] { cancel, Title, save };
             uiView.AddSubview(stack.ToPlatform(this.Handler.MauiContext));
             uiView.AutoresizingMask = UIViewAutoresizing.FlexibleHeight;
             handler.PlatformView.InputAccessoryView = uiView;
-            // handler.PlatformView.InputAccessoryView = stack.ToPlatform(this.Handler.MauiContext);
 #endif
         });
 
